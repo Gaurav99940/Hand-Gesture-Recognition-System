@@ -1,0 +1,25 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary session data logs (keep folder structure)
+session_data/*.csv
+session_data/*.json
+session_data/*.png
+session_data/snapshots/*
+!session_data/.gitkeep
+
+# IDEs and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

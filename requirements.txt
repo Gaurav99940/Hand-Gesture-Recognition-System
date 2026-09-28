@@ -1,0 +1,6 @@
+opencv-python>=4.8.0
+mediapipe>=1.0.0
+numpy>=1.26.0
+pandas>=2.0.0
+matplotlib>=3.8.0
+pyautogui>=0.9.54

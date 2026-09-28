@@ -6,9 +6,10 @@ import time
 # Initialize MediaPipe Hands
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.8)
-mp_drawing = mp.solutions.drawing_utils
+mp_drawing = mp.solutions.drawing_utilsw                                            
 
-# Screen Dimensions
+
+# Screen Dimensions                                         
 screen_width, screen_height = pyautogui.size()
 
 # Gesture Variables
@@ -18,7 +19,7 @@ gesture_hold_time = 0.8  # Minimum time between gestures
 # Helper Functions
 def distance(landmark1, landmark2):
     """Calculate Euclidean distance between two landmarks."""
-    return ((landmark1.x - landmark2.x)**2 + (landmark1.y - landmark2.y)**2)**0.5
+    return ((landmark1.x - landmark2.x)**2 + (landmark1.y - landmark2.y)**2)**0.5  
 
 def detect_gesture(hand_landmarks, hand_label, img):
     global last_action_time
